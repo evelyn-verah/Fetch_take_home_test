@@ -10,12 +10,9 @@ I’ve completed an in-depth analysis of Fetch’s transaction and user data, id
 ## Key Data Quality Issues & Business Impact  
 - **Missing Data (Birth Date, Gender, Language)** – Limits customer segmentation and targeting effectiveness.  
 - **Duplicate Product Records** – Skews analytics, leading to incorrect insights and poor decision-making.  
-- **Inconsistent Product Categorization** – Example: Hard Seltzers are misclassified as non-alcoholic, affecting promotions and analytics.  
-- **Quantity vs. Sales Mismatches** – Cases where `FINAL_QUANTITY = 0`, but sales amounts are recorded, leading to potential revenue miscalculations.  
+- **Inconsistent Product Categorization** – Example: Hard Seltzers are misclassified as non-alcoholic, affecting analytics.  
 - **Brand, Gender & Store Name Variations** – Causes inconsistent reporting and brand performance tracking.  
-- **Data Format Issues in FINAL_QUANTITY** – Some sales records store `'zero'` as text instead of numeric `0`, leading to calculation errors in sales and inventory reports.  
-- **Final Sale Discrepancies** – `FINAL_QUANTITY = 0` should mean `FINAL_SALE = 0`, but some records still show sales amounts, requiring further investigation.  
-
+- **Data Format Issues in FINAL_QUANTITY** – Some sales records store `'zero'` as text instead of numeric `0`, leading to calculation errors in our analysis.
 ---
 
 ## Outstanding Questions  
@@ -49,8 +46,6 @@ I’ve completed an in-depth analysis of Fetch’s transaction and user data, id
 - **Improve Data Collection & Validation** – Work with the tech team to ensure accurate data extraction from receipts to prevent missing values.  
 - **Standardize Brand, Gender & Store Name Variations** – To fix skewed reporting and improve analytics consistency.  
 - **Clarify Product Hierarchy & Categorization Rules** – To correct misclassifications and improve product insights.  
-- **Enhance Historical User Engagement Analysis** – Leverage app usage and campaign response data to build better predictive churn models.  
-
 ---
 
 ## Conclusion  
