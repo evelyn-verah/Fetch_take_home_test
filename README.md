@@ -1,4 +1,4 @@
-## Subject: Key Findings & Next Steps from Fetch Data Analysis
+## Subject: Data Analysis Summary - Key Findings & Next Steps from Fetch Data Analysis
 
 ## Introduction  
 Hello Product / Business Manager,  
